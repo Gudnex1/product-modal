@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Modal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
+
 <body>
+    <!-- background -->
     <div class="flex items-center justify-center bg-gray-200 min-h-screen">
-        <div class="p-8 bg-white text-white "></div>
+        <!-- card -->
+        <div class="p-8 bg-white text-black flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 shadow-xl">
+            <img src="/img/headphone.png" alt="headphone_image" class="w-60 self-center hover:scale-105 duration-300">
+            <div class="flex flex-col p-2 items-center space-y-3">
+                <h3 class="bg-black px-5 py-1.5 text-white rounded-full text-sm font-medium text-center md:self-start
+                ">Free shipping!
+                </h3>
+                <p class="text-center text-2xl font-bold max-w-sm md:text-left">Razer Kraken Kitty Edt Gaming Headset
+                    Quartz</p>
+                <div class="flex flex-col items-center md:items-start space-y-3 md:space-y-0 md:space-x-">
+                    <span class="line-through font-serif text-sm tracking-tight">$799</span>
+                    <span class="font-bold text-5xl">$599</span>
+                    <span class="text-sm text-gray-500 font-light">This offer is valid until october 3rd or as long as
+                        stock lasts!</span>
+                </div>
+                <div class="group w-full">
+                    <button
+                        class="bg-blue-500 rounded-lg hover:bg-blue-700 text-white w-full px-8 py-4 duration-200">Add to
+                        Cart</button>
+                </div>
+                <div class="flex justify-center items-center space-x-1 self-start">
+                    <div class="w-3 rounded-full bg-red-600 h-3 hover:animate-ping"></div>
+                    <h5 class="text-sm font-serif text-gray-500">50+pcs. in stock!!</h5>
+                </div>
+                <div class="space-y-3  md:space-x-3 md:space-y-0 w-full mt-13 flex flex-col md:flex-row">
+                    <button class="text-center px-8 border-gray-300 py-4 w-full duration-300 transition-all  border-2 rounded-lg hover:shadow-lg hover:-translate-y-0.5">Add to cart</button>
+                    <button class="text-center px-8 border-gray-300 py-4 w-full duration-300 transition-all  border-2 rounded-lg hover:shadow-lg">Add to wishlist</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
